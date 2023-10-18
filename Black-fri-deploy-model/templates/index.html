@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Black Friday Sales Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Gender">Select your gender:-</label>
+        <input type="text" name="Gender"><br><br>
+        <label for="Age">select your age:-</label>
+        <input type="text" name="Age"><br><br>
+        <label for="Occupation">Enter no of occupation:-</label>
+        <input type="text" name="Occupation"><br><br>
+        <label for="City_Category">Select your city:-</label>
+        <input type="text" name="City_Category"><br><br>
+        <label for="Stay_In_Current_City_Years">Choose the years lived in this city:-</label>
+        <input type="text" name="Stay_In_Current_City_Years"><br><br>
+        <label for="Marital_Status">Select your Marital Status:-</label>
+        <input type="text" name="Marital_Status"><br><br>
+        <label for="Product_Category_1">Enter no of Product_1:-</label>
+        <input type="text" name="Product_Category_1"><br><br>
+        <label for="Product_Category_1">Enter no of Product_2:-</label>
+        <input type="text" name="Product_Category_2"><br><br>
+        <label for="Product_Category_1">Enter no of Product_3:-</label>
+        <input type="text" name="Product_Category_3"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+        
+        <p>{{pred}}</p>
+    </div>
+</body>
+</html>
